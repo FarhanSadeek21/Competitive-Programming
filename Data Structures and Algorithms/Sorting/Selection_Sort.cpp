@@ -7,10 +7,11 @@ int main(){
     for(int i = 0; i < n; i++){
         cin >> v[i];
     }
+
     for(int i = 0; i < n; i++){
         int minIndex = i;
         for(int j = i + 1; j < n; j++){
-            if(v[i] < v[minIndex]){
+            if(v[j] < v[minIndex]){
                 minIndex = j;
             }
         }
