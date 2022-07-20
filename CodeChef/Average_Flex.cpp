@@ -2,16 +2,20 @@
 using namespace std;
 
 void solve(){
-    int v[11];
-    int n, sum = 0; cin >> n;
+    int n; cin >> n;
+    int less, more;
+    vector <int> v(n);
     for(int i = 0; i < n; i++){
-        int x, y; cin >> x >> y;
-        v[x] = y;
+        cin >> v[i];
     }
     for(int i = 0; i < n; i++){
-        sum += v[i];
+        for(int j = 0; j < n; j++){
+            if(v[i] > v[j]){
+                
+            }
+            else if()
+        }
     }
-    cout << sum << endl;
 }
 
 int main(){
