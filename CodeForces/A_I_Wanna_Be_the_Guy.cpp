@@ -15,12 +15,10 @@ int main(){
         cin >> qI[j];
     }
     pI.insert(pI.end(), qI.begin(), qI.end());
-    for(int k = 0; k < pI.size(); k++){
-        if(pI[k] == n){
-            isPresent = true;
-        }
-    }
-    if(isPresent) cout << "I become the guy." << endl;
+    sort(pI.begin(), pI.end());
+    set <int> s(pI.begin(), pI.end());
+    int ans = s.size();
+    if(ans == n) cout << "I become the guy." << endl;
     else cout << "Oh, my keyboard!" << endl;
     return 0;
 }
