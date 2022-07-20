@@ -7,6 +7,8 @@ int main(){
     vector <int> ans(n);
     for(int i = 0; i < n; i++){
         cin >> v[i];
+        a = v[i]; 
+        ans[a] = i;
     }
     for(int i = 0; i < n; i++){
         
